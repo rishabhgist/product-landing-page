@@ -11,6 +11,9 @@
     & form{
         display: flex;
         flex-direction: column;
+        & mat-form-field{
+            margin: 15px 0;
+        }
     }
     & mat-radio-group{
         margin: 10px 0;
