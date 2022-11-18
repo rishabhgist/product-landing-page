@@ -1,14 +1,32 @@
 <div class="container">
+  <mat-card *ngIf="products.length == 0">
+    <mat-card-title> No Items found !!</mat-card-title>
+    <mat-card-content
+      >Add your item here
+      <a
+        href="./add-item"
+        type="button"
+        mat-mini-fab
+        color="primary"
+        class="add-item"
+        ><mat-icon>add</mat-icon></a
+      ></mat-card-content
+    >
+  </mat-card>
   <div class="items">
     <mat-card *ngFor="let product of products">
       <mat-card-title
-        ><span>{{product.name}}</span>
+        ><span>{{ product.name }}</span>
         <button mat-icon-button>
-          <img mat-card-image src="../../assets/{{product.category}}.png" alt="Background" />
+          <img
+            mat-card-image
+            src="../../assets/{{ product.category }}.png"
+            alt="Background"
+          />
         </button>
       </mat-card-title>
       <mat-card-content>
-       {{product.description}}
+        {{ product.description }}
       </mat-card-content>
     </mat-card>
   </div>
