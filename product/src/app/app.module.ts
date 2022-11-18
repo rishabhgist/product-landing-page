@@ -23,6 +23,7 @@ import {
   MatRadioModule,
   MAT_RADIO_DEFAULT_OPTIONS,
 } from '@angular/material/radio';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {
     FormsModule,
     MatInputModule,
     MatRadioModule,
+    HttpClientModule,
   ],
   providers: [
     {
