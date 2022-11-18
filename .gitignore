@@ -12,7 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-.idea/
+*/.idea/
 .project
 .classpath
 .c9/
@@ -21,7 +21,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
-.vscode/*
+product/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -29,8 +29,8 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-.angular/cache
-.sass-cache/
+product/.angular/cache
+product/.sass-cache/
 connect.lock
 coverage
 libpeerconnection.log

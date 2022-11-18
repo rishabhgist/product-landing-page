@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  #user {
+    width: 150px;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  & p{
+    text-align: left;
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,51 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>Connect With Me</mat-card-title>
+    <mat-card-content>
+      <div class="social">
+        <a
+          type="buton"
+          href="https://linkedin.com/in/rishabhgist"
+          mat-icon-button
+          color="primary"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          type="buton"
+          href="htpps://github.com/rishabhgist"
+          mat-icon-button
+          color="primary"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          type="buton"
+          href="https://rishabhgist.com"
+          mat-icon-button
+          color="primary"
+        >
+          <i class="fa-solid fa-globe"></i>
+        </a>
+      </div>
+    </mat-card-content>
+    <div class="contact-form">
+        <p>Leave me a Message</p>
+        <form>
+            <mat-form-field appearance="fill">
+                <mat-label>Your Name</mat-label>
+                <input type="text" name="name" required matInput>
+            </mat-form-field>
+             <mat-form-field appearance="fill">
+                <mat-label>Your Email</mat-label>
+                <input type="email" name="email" required matInput>
+            </mat-form-field>
+             <mat-form-field appearance="fill">
+                <mat-label>Your Suggestion</mat-label>
+                <textarea type="text" name="message" required matInput></textarea>
+            </mat-form-field>
+            <button mat-raised-button type="button" color="primary">Send</button>
+        </form>
+    </div>
+  </mat-card>
+</div>
