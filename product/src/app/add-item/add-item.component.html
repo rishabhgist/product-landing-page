@@ -1,1 +1,23 @@
-<p>add-item works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-title>Add Item</mat-card-title>
+        <mat-card-content><form>
+           <mat-form-field>
+             <mat-label>Item name</mat-label>
+            <input type="text" matInput required autocomplete="off">
+           </mat-form-field>
+           <mat-form-field>
+            <mat-label>Item Description</mat-label>
+            <textarea type="text" matInput required autocomplete="off"></textarea>
+           </mat-form-field>
+           <mat-radio-group aria-label="Select an option">
+                <span>Category </span>
+                <mat-radio-button value="imac">Electronic</mat-radio-button>
+                <mat-radio-button value="shopping">Wearable</mat-radio-button>
+                <mat-radio-button value="furniture">Household</mat-radio-button>
+                <mat-radio-button value="misc">Miscellaneous</mat-radio-button>
+            </mat-radio-group>
+            <button mat-raised-button color="primary">Add Item</button>
+            </form></mat-card-content>
+    </mat-card>
+</div>

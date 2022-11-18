@@ -1,0 +1,25 @@
+.container{
+    width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    & mat-card{
+        padding: 35px 25px;
+        &-title{
+            margin-bottom: 20px;
+        }
+    }
+    & form{
+        display: flex;
+        flex-direction: column;
+    }
+    & mat-radio-group{
+        margin: 10px 0;
+    }
+    & mat-radio-button{
+        margin: 0 15px;
+    }
+    & button{
+        margin-top: 30px;
+        width: 180px;
+    }
+}

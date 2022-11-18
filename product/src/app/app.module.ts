@@ -19,6 +19,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { AddItemComponent } from './add-item/add-item.component';
+import {
+  MatRadioModule,
+  MAT_RADIO_DEFAULT_OPTIONS,
+} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -43,8 +47,14 @@ import { AddItemComponent } from './add-item/add-item.component';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
+    MatRadioModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: MAT_RADIO_DEFAULT_OPTIONS,
+      useValue: { color: 'primary' },
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
