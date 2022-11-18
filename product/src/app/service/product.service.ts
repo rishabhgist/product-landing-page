@@ -10,7 +10,7 @@ export class ProductService {
   constructor(private http: HttpClient) { }
   URL: string = 'http://localhost:8080/api/v1/addItem'
   
-  post(item: Product) {
+  post(item: any) {
     return this.http.post(this.URL, item);
   }
   getAll() {
