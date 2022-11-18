@@ -1,14 +1,14 @@
 <div class="container">
   <div class="items">
-    <mat-card>
+    <mat-card *ngFor="let product of products">
       <mat-card-title
-        ><span>Electronic</span>
+        ><span>{{product.name}}</span>
         <button mat-icon-button>
-          <img mat-card-image src="../../assets/imac.png" alt="Background" />
+          <img mat-card-image src="../../assets/{{product.category}}.png" alt="Background" />
         </button>
       </mat-card-title>
       <mat-card-content>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       {{product.description}}
       </mat-card-content>
     </mat-card>
   </div>
