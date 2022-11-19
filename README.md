@@ -1,27 +1,32 @@
-# Product
+# Product Landing Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+## Context
 
-## Development server
+This application is a combination of frontend and backend applicaton demo. User Interface is created using Angular while backend is created using Spring Boot. The app uses `REST API` to add and get all the data form the server, to store the data the Spring Boot uses `h2 database api`. The data stored is temprory and when application is closed the data is erased from the storge.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Frontend Services
 
-## Code scaffolding
+- [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+- [FontAwosme](https://fontawesome.com/icons/) version 6.2.0
+- [Angular Material](https://material.angular.io/) version 14.2.7
+- [Product UI](./product/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Backend Services
 
-## Build
+- [Spring Boot](https://spring.io/projects/spring-boot) version 2.7.5
+- [H2 Database](https://www.h2database.com/html/main.html) version 2.1.214
+- [Boot Server](./server)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Preview
 
-## Running unit tests
+# Run
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run angular application move your working directory to `/product` directory. and use the command.
 
-## Running end-to-end tests
+- Angular - `ng serve`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run the Spring boot REST API server use move your working directory to `/server` the below command.
 
-## Further help
+- Server - `mvnspring-boot:run`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributors
