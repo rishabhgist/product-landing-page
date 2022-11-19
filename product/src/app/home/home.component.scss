@@ -5,6 +5,9 @@
     display: grid;
     grid-template-columns: auto auto auto;
 }
+.main{
+    height: 100vh;
+}
 mat-card{
     margin: 10px;
     width: 250px;
@@ -25,9 +28,9 @@ mat-card{
         -moz-user-drag: none;
         -o-user-drag: none;
     }
-
-    & .add-item{
-        margin-left: 30px;
-    }
-
+}
+.add-item{
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
 }
