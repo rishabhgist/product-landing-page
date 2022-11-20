@@ -17,8 +17,24 @@ This application is a combination of frontend and backend applicaton demo. User 
 - [H2 Database](https://www.h2database.com/html/main.html) version 2.1.214
 - [Boot Server](./server)
 
+### API Services
+
+- `REST API`
+- [Postman](https://www.postman.com/) version 9.18.3
+
 # Preview
 
+### Home
+
+![](./home.PNG)
+
+### Add Item
+
+![](./add.PNG)
+
+# Database
+
+![](./h2.PNG)
 
 ### Run
 
