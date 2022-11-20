@@ -18,7 +18,14 @@ export class AddItemComponent {
 
   addItem(item: any) {
     this.service.post(item.value).subscribe((value) => {
-      console.log('DataSaved');
+       this._snackBar.open(
+         'Item added successfully!!',
+         'success',
+         {
+           duration: 5000,
+           panelClass: ['mat-toolbar', 'mat-primary'],
+         }
+       );
     });
   }
 }
