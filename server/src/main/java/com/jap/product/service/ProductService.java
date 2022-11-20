@@ -33,6 +33,6 @@ public class ProductService implements IProductService {
      */
     @Override
     public List<Product> getAll() {
-        return null;
+        return (List<Product>) this.productRepository.findAll();
     }
 }
