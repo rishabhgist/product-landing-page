@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Product } from '../model/product';
 import { ProductService } from '../service/product.service';
 
 @Component({
