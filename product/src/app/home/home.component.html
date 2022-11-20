@@ -8,7 +8,7 @@
       <mat-card *ngFor="let product of products">
         <mat-card-title
           ><span>{{ product.name }}</span>
-          <button mat-icon-button>
+          <button mat-icon-button (click)="sort(product.category)">
             <img
               mat-card-image
               src="../../assets/{{ product.category }}.png"

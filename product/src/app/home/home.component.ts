@@ -19,17 +19,19 @@ export class HomeComponent implements OnInit {
     this.productService.getAll().subscribe((value) => (this.products = value));
   }
   isSorted: boolean = false;
-  sort(category: String) {
-    if (!this.isSorted) {
-      this.products = this.products.filter(
-        (product) => product.category === category
-      );
-      this.isSorted = true;
-    } else {
-      this.productService
-        .getAll()
-        .subscribe((value) => (this.products = value));
-      this.isSorted = false;
+  sort(category: String | undefined) {
+    if (category) {
+      if (!this.isSorted) {
+        this.products = this.products.filter(
+          (product) => product.category === category
+        );
+        this.isSorted = true;
+      } else {
+        this.productService
+          .getAll()
+          .subscribe((value) => (this.products = value));
+        this.isSorted = false;
+      }
     }
   }
 }
