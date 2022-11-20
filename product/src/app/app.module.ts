@@ -24,6 +24,7 @@ import {
   MAT_RADIO_DEFAULT_OPTIONS,
 } from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatRadioModule,
     HttpClientModule,
+    MatSnackBarModule,
   ],
   providers: [
     {
