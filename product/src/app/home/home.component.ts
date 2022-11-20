@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   products: Product[] = [];
 
   getAll() {
-    this.productService.getAll().subscribe(value=> this.products)
+    this.productService.getAll().subscribe(value=> this.products = value)
   }
  
 }
