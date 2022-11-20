@@ -42,7 +42,7 @@ To run angular application move your working directory to `/product` directory. 
 
 - Angular - `ng serve`
 
-To run the Spring boot REST API server use move your working directory to `/server` the below command.
+To run the Spring boot REST API server move your working directory to `/server` use the below command. Make sure you have installed [Apache Maven](https://maven.apache.org/) before you run the below command.
 
 - Server - `mvnspring-boot:run`
 
