@@ -23,7 +23,7 @@ public class ProductService implements IProductService {
      */
     @Override
     public Product add(Product product) {
-        return null;
+        return this.productRepository.save(product);
     }
 
     /**
