@@ -4,6 +4,15 @@
 
 This application is a combination of frontend and backend applicaton demo. User Interface is created using Angular while backend is created using Spring Boot. The app uses `REST API` to add and get all the data form the server, to store the data the Spring Boot uses `h2 database api`. The data stored is temprory and when application is closed the data is erased from the storge.
 
+### Methods Usage
+- **GetAll** - This method executes when the homepage is open it automatically fetch the data from the `h2 db` using `rest api` and display the data.
+- **AddItem** - This method executes when used add an item using the form. It adds the data in `h2 database` using `http post request` and display success message if the data is saved.
+- **SortItem** - This method executes when user click on the categeory icon which is on the top-right of each item. Item gets sorted according to the category and if clicked again the item is back to original form.
+
+### API Usage
+- Get - http://localhost:8080/api/v1/getAll
+- Post - http://localhost:8080/api/v1/post
+
 ### Frontend Services
 
 - [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
