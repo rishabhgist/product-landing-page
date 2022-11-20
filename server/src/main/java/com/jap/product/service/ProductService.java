@@ -1,10 +1,17 @@
 package com.jap.product.service;
 
 import com.jap.product.domain.Product;
+import com.jap.product.repository.ProductRepository;
 
 import java.util.List;
 
 public class ProductService implements IProductService {
+
+    private ProductRepository productRepository;
+
+    public ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     /**
      * Add a product to the database
