@@ -2,6 +2,7 @@ package com.jap.product.service;
 
 import com.jap.product.domain.Product;
 import com.jap.product.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ public class ProductService implements IProductService {
 
     private ProductRepository productRepository;
 
+    @Autowired
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
