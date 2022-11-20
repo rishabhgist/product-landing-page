@@ -8,12 +8,11 @@ import { Product } from '../model/product';
 })
 export class ProductService {
   constructor(private http: HttpClient) {}
-  URL: string = 'http://localhost:8080/api/v1/addItem';
 
   post(item: any) {
-    return this.http.post(this.URL, item);
+    return this.http.post('http://localhost:8080/api/v1/post', item);
   }
   getAll(): Observable<Array<Product>> {
-    return this.http.get<Array<Product>>(this.URL);
+    return this.http.get<Array<Product>>('http://localhost:8080/api/v1/getAll');
   }
 }
